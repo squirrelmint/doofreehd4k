@@ -8,7 +8,7 @@ class Av extends BaseController
 	protected $base_backurl;
 	public $img_backurl = "img_movies/";
 	public $branch = '';
-	public $backURL = "https://dooporn.aegistrex.com/";
+	public $backURL = "http://localhost:9999/";
 
 	public function __construct()
 	{
@@ -384,29 +384,35 @@ class Av extends BaseController
 		$feildplay = "";
 		$video_data = $this->VideoModel->get_id_video($id);
 	 	$category_pagevideo= $this->VideoModel->showcategory_pagevideo($id);
-		
 		$category_id = $this->VideoModel->get_category_xvideo($this->branch);
-		$path_livesteram = $this->VideoModel->get_path_livesteram();
 		$path_imgads = $this->VideoModel->get_path_imgads($this->branch);
-		$setting = $this->VideoModel->get_setting($this->branch);
-		$listcontent = $this->VideoModel->get_listcontent($this->branch);
-		// $video_interest = $this->VideoModel->get_video_interest($this->branch);
-		
-		$seo = $this->VideoModel->get_seo($this->branch);
-		$name_video = $this->VideoModel->get_namevideo($id);
-		$get_title = $this->VideoModel->get_title($this->branch);
-		$get_img_og = $this->VideoModel->get_img_og($id);
-		// $list_video = $this->VideoModel->get_list_video($this->branch, '', $page);
-		// $listyear = $this->VideoModel->get_listyear($this->branch);
-
-		$name_videos = $name_video['movie_thname'];
-		$title_name = $get_title['setting_title'];
-		$title = $seo['seo_title'];
-		$description = $seo['seo_description'];
-		$description_movie = $name_video['movie_des'];
-		$discription_web = str_replace("{movie_description}", $description_movie, $description);
-		$title_web = str_replace("{movie_title} - {title_web}", $name_videos . " - " . $title_name, $title);
 		$vdorandom_clip = $this->VideoModel->get_id_video_random_clip($this->branch);
+		$setting = $this->VideoModel->get_setting($this->branch);
+		$setting['setting_img'] = $video_data['movie_picture'];
+		$seo = $this->VideoModel->get_seo($this->branch);
+
+		if(!empty($seo)){
+			if(!empty($seo['seo_title'])){
+				$title = $seo['seo_title'];
+				$name_videos = $video_data['movie_thname'];
+				$title_name = $setting['setting_title'];
+				$title_web = str_replace(
+								"{movie_title} - {title_web}", 
+								$name_videos . " - " . $title_name, 
+								$title
+							);
+				$setting['setting_title'] = $title_web;
+			}
+			
+			if(!empty($seo['seo_description'])){
+				$description = $seo['seo_description'];
+				$description_movie = $video_data['movie_des'];
+				$setting['setting_description'] = str_replace("{movie_description}", $description_movie, $description);
+			}
+			
+		}
+
+		
 		if ($video_data['movie_sound'] == "thai" || $video_data['movie_sound'] == "") {
 
 			if ($typeplay == "main") {
@@ -426,39 +432,31 @@ class Av extends BaseController
 				$feildplay = 'movie_ensub2';
 			}
 		}
+
 		$data = [
+			'branch' => $this->branch,
+			'backURL' => $this->backURL,
+			'docavURL' => $this->docavURL,
+			'path_setting' => $this->path_setting,
+			'path_ads' => $this->path_ads,
 			'category_id' => $category_id,
-			// 'listyear' => $listyear,
 			'cliprandom' => $cliprandom,
 			'video_data' => $video_data,
 			'feildplay' => $feildplay,
 			'base_backurl' => $this->base_backurl,
-			// 'list_video' => $list_video['list'],
 			'ads' => $path_imgads,
-			'backURL' => $this->backURL,
 			'setting' => $setting,
-			'branch' => $this->branch,
 			'path_imgads' => $path_imgads,
 			'keyword_string' => $keyword_string,
-			'name_videos' => $name_videos,
-			'title_name' => $title_name,
-			'title' => $title,
-			'description' => $description,
-			'description_movie' => $description_movie,
-			'discription_web' => $discription_web,
-			'title_web' => $title_web,
-			'get_img_og' => $get_img_og,
-			// 'video_interest' => $video_interest,
 			'category_pagevideo' => $category_pagevideo,
 			'vdorandom_clip' => $vdorandom_clip
 		];
 
 	
-		echo view('clip/templates/header-clip',$data);
+		echo view('clip/templates/header',$data);
 		echo view('clip/video-clip',$data);
 		echo view('av/templates/footer');
 
-		// $this->CountModel->movie_view($id);
 	}
 
 	public function video_genres_clip($id, $name)

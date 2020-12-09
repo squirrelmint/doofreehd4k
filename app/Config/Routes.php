@@ -68,6 +68,7 @@ $routes->post('saveReport', 'Av::saveReport');
 
 #clip
 $routes->get('clip', 'Av::clip');
+$routes->get('clip/(:num)/(:any)', 'Av::video_clip/$1/$2');
 $routes->get('clip/genres/(:num)/(:any)', 'Av::video_genres_clip/$1/$2');
 $routes->get('clip/search/(:any)', 'Av::clip_search/$1');
 

@@ -204,12 +204,12 @@
             <ul class="nav">
                 <li class="nav-main-item  menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-28">
                     <a class="nav-main-link" alt="หน้าแรก" href="<?php echo str_replace('/public', '', base_url()); ?>" style="font-size: 19px">
-                        Movie
+                        หนัง
                     </a>
                 </li>
                 <li class="cat-item">
                     <a href="<?php echo base_url('/av'); ?>" alt="Av" title="Av" style="font-size: 19px">
-                        Av
+                        หนังโป๊
                     </a>
                 </li>
                 

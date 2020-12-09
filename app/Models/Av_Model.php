@@ -1030,27 +1030,16 @@ class Av_Model extends Model
 
 
     public function get_id_video($id)
-
     {
 
         $sql = "SELECT
-
                     *
-
                 FROM
-
                     `$this->table_movie`
-
                 WHERE
-
                     `$this->table_movie`.movie_id = ? 
-
                     AND `$this->table_movie`.movie_active = '1'";
-
         $query = $this->db->query($sql, [$id]);
-
-
-
         return $query->getRowArray();
     }
 
@@ -2623,21 +2612,16 @@ class Av_Model extends Model
     {
 
         $sql = "SELECT
-
-                `mo_movie`.*
-                -- `mo_movie`.movie_id as mid
+                    `$this->table_movie`.*
                 FROM
                     `$this->table_movie`
-               
                 WHERE
                     `$this->table_movie`.branch_id = '$branch_id'
                     AND `$this->table_movie`.movie_active = '1' AND `$this->table_movie`.movie_type = 'cl'
                     ORDER BY RAND()  limit 4";
 
-                    // print_r($sql);die;
-                    $query = $this->db->query($sql);
-                    // print_r($query->getResultArray());die;
-                    return $query->getResultArray();
+        $query = $this->db->query($sql);
+        return $query->getResultArray();
     }
 
     public function get_id_video_random_clip($branch_id)
