@@ -1,0 +1,85 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .font-effect-neon {
+    text-shadow: 0 0 3.1em #fff, 0 0 1.2em #fff, 0 0 0.3em #fff,
+      0 0 0.4em #f80072, 0 0 4.6em #e7004b, 0 0 0.8em #f60071, 0 0 1em #ba0033,
+      0 0 4.2em #d70d6a;
+    color: #000;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .font-effect-neon {
+    text-shadow: 0 0 3.1em #fff, 0 0 1.2em #fff, 0 0 0.3em #fff,
+      0 0 0.4em #f80072, 0 0 4.6em #e7004b, 0 0 0.8em #f60071, 0 0 1em #ba0033,
+      0 0 4.2em #d70d6a;
+    color: #000;
+    font-size: 16px;
+  }
+  .navbar-form .form-control {
+    display: inline-block;
+    width: 10rem;
+    vertical-align: middle;
+  }
+  .navbar-default-ghost .navbar-nav > li > a {
+    font-weight: 0;
+    font-size: 13px;
+    color: #fff;
+    margin: 0px;
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .font-effect-neon {
+    text-shadow: 0 0 3.1em #fff, 0 0 1.2em #fff, 0 0 0.3em #fff,
+      0 0 0.4em #f80072, 0 0 4.6em #e7004b, 0 0 0.8em #f60071, 0 0 1em #ba0033,
+      0 0 4.2em #d70d6a;
+    color: #000;
+    font-size: 16px;
+  }
+  .navbar-form .form-control {
+    display: inline-block;
+    width: 17rem;
+    vertical-align: middle;
+  }
+}
+
+.bubbles {
+  display: inline-block;
+  font-family: arial;
+  position: relative;
+}
+
+.bubbles h1 {
+  position: relative;
+  margin: 1em 0 0;
+  font-family: "Luckiest Guy", cursive;
+  color: #fff;
+  z-index: 2;
+}
+
+.individual-bubble {
+  position: absolute;
+  border-radius: 100%;
+  bottom: 10px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.brunefire {
+  text-align: center;
+  padding-top: 150px;
+  color: #000;
+  white-space: nowrap;
+  text-shadow: -2px -1px 2px purple, 2px -2px 2px blue, 2px -10px 20px white,
+    0 -2px 6px red, 2px -2px 10px white, 5px -10px 15px lightyellow,
+    8px -20px 20px yellow, 12px -30px 25px orange, 5px -60px 40px orange,
+    15px -34px 30px darkorange, 0px -36px 35px red, 40px -40px 50px red,
+    -20px -60px 40px red, 20px -80px 40px red, 40px -80px 40px red,
+    20px -120px 60px red, 20px -150px 80px black, 50px -160px 80px black,
+    100px -200px 100px black, 120px -150px 100px black, 100px -100px 100px black,
+    120px -220px 100px black, 200px -300px 150px black;
+}

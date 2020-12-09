@@ -1,0 +1,8 @@
+@font-face {
+         font-family: myFirstFont;
+         src: url('/public/av/assets/font/Prompt-Bold.ttf');
+      }
+
+	 ul, li, a , h1, h2, h3, h4, h5, p ,div{
+      font-family: myFirstFont !important; 
+    }

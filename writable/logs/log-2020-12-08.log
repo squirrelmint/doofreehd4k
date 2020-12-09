@@ -1,0 +1,501 @@
+CRITICAL - 2020-12-08 05:58:00 --> Invalid file: {0}
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(81): view('templates/heade...', Array)
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 06:06:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESCLIMIT 0, 24' at line 8
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT\r\n       ...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Helpers\pagination_helper.php(9): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Video_Model.php(101): get_pagination('SELECT\r\n       ...', 1, 24, 3535)
+#5 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(52): App\Models\Video_Model->get_list_video(1, '', 1)
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#7 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#8 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-08 06:09:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESCLIMIT 0, 24' at line 11
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT\r\n       ...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Helpers\pagination_helper.php(9): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Video_Model.php(105): get_pagination('SELECT\r\n       ...', 1, 24, 3535)
+#5 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(54): App\Models\Video_Model->get_list_video(1, '', 1)
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#7 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#8 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-08 06:16:43 --> Undefined variable: document_url
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(79): view('movie/templates...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 06:16:45 --> Undefined variable: document_url
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(79): view('movie/templates...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:17:23 --> Invalid file: {0}
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('movie/templates...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(217): view('movie/templates...', Array)
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->video_byyear('2020')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 07:22:47 --> Invalid file: {0}
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('movie/templates...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(282): view('movie/templates...', Array)
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->series('472', '\xE0\xB8\x94\xE0\xB8\xB9\xE0\xB8\xAB\xE0\xB8\x99\xE0\xB8\xB1...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 07:27:18 --> Undefined variable: document_root
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\player.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/player', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(504): view('movie/player', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->player('5169', 'movie_thmain')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:27:47 --> Undefined variable: docmvUrl
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\player.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/player', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(504): view('movie/player', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->player('5169', 'movie_thmain')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:28:05 --> Undefined variable: docmvUrl
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\player.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/player', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(505): view('movie/player', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->player('5169', 'movie_thmain')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:28:16 --> Undefined variable: document_root
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\player.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/player', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(505): view('movie/player', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->player('5169', 'movie_thmain')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:28:27 --> Undefined variable: playerUrl
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\player.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 92, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/player', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(505): view('movie/player', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->player('5169', 'movie_thmain')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:28:54 --> Undefined variable: backUrl
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\player.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 172, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/player', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(505): view('movie/player', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->player('5169', 'movie_thmain')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:29:07 --> Undefined variable: backUrl
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\player.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 172, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/player', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(505): view('movie/player', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->player('5169', 'movie_thmain')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:30:56 --> Undefined variable: docURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\footer.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(82): view('movie/templates...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:31:25 --> Undefined variable: docURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\footer.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(82): view('movie/templates...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:31:40 --> Undefined variable: docURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\footer.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(222): view('movie/templates...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->video_byyear('2020')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:32:08 --> Undefined variable: docURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\footer.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(82): view('movie/templates...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:33:14 --> Undefined variable: docURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\footer.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(82): view('movie/templates...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:34:06 --> Undefined variable: docURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\footer.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(82): view('movie/templates...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:34:08 --> Undefined variable: docURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\footer.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(82): view('movie/templates...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 07:36:10 --> Undefined index: setting_img
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\movie\templates\header.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('movie/templates...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Movie.php(531): view('movie/templates...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Movie->video_search('the')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 08:03:33 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1190): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1700): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(40): CodeIgniter\Model->__call('get_path_imgads', Array)
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 08:04:31 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1190): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1700): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(40): CodeIgniter\Model->__call('get_path_imgads', Array)
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 08:04:49 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1190): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1700): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(40): CodeIgniter\Model->__call('get_path_imgads', Array)
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 08:05:05 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1190): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1700): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(40): CodeIgniter\Model->__call('get_path_imgads', Array)
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 08:05:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''-10', 10' at line 6
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT\n        ...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n        ...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n        ...')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Helpers\pagination_helper.php(9): CodeIgniter\Database\BaseConnection->query('SELECT\n        ...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(174): get_pagination('SELECT\n        ...', '', 10, 1621)
+#5 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(41): App\Models\Av_Model->get_movie_new_recommend(2, '', 1)
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#7 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#8 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-08 08:06:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''-10', 10' at line 6
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT\n        ...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n        ...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n        ...')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Helpers\pagination_helper.php(9): CodeIgniter\Database\BaseConnection->query('SELECT\n        ...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(174): get_pagination('SELECT\n        ...', '', 10, 1621)
+#5 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(41): App\Models\Av_Model->get_movie_new_recommend(2, '', 1)
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#7 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#8 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-08 08:06:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''-10', 10' at line 6
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT\n        ...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n        ...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n        ...')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Helpers\pagination_helper.php(9): CodeIgniter\Database\BaseConnection->query('SELECT\n        ...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(174): get_pagination('SELECT\n        ...', '', 10, 1621)
+#5 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(41): App\Models\Av_Model->get_movie_new_recommend(2, '', 1)
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#7 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#8 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-08 08:06:41 --> Too few arguments to function App\Models\Av_Model::get_category(), 1 passed in C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php on line 42 and exactly 2 expected
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(42): App\Models\Av_Model->get_category(2)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-08 08:07:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''-10', 10' at line 6
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT\n        ...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n        ...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n        ...')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Helpers\pagination_helper.php(9): CodeIgniter\Database\BaseConnection->query('SELECT\n        ...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(174): get_pagination('SELECT\n        ...', '', 10, 1621)
+#5 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(41): App\Models\Av_Model->get_movie_new_recommend(2, '', 1)
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#7 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#8 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-08 08:08:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''-10', 10' at line 6
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT\n        ...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n        ...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n        ...')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Helpers\pagination_helper.php(9): CodeIgniter\Database\BaseConnection->query('SELECT\n        ...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(173): get_pagination('SELECT\n        ...', '', 10, 1621)
+#5 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(41): App\Models\Av_Model->get_movie_new_recommend(2, '', 1)
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#7 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#8 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-08 08:10:51 --> Undefined variable: docavURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\av\templates\header.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('av/templates/he...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(64): view('av/templates/he...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 08:11:12 --> Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\av\index.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('av/index.php', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(66): view('av/index.php')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 08:55:10 --> Undefined property: Config\App::$backURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(882): App\Controllers\Av->__construct()
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-08 08:55:29 --> Undefined variable: path_imgads
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\av\templates\footer.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 272, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('av/templates/fo...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(76): view('av/templates/fo...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 08:55:55 --> Undefined variable: path_imgads
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\av\templates\footer.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 272, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('av/templates/fo...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(74): view('av/templates/fo...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 08:56:51 --> Undefined variable: path_imgads
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\av\templates\footer.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 272, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('av/templates/fo...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(74): view('av/templates/fo...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 08:57:44 --> Undefined variable: path_imgads
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\av\templates\footer.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 272, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('av/templates/fo...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(74): view('av/templates/fo...')
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->index()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 09:16:23 --> Undefined variable: get_img_og
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\clip\templates\header.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('clip/templates/...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(353): view('clip/templates/...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->clip()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 09:20:42 --> Undefined property: App\Controllers\Av::$branch_id
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(225): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 225, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->video_genres('28', '%E0%B9%81%E0%B8...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-08 09:21:08 --> Undefined property: App\Controllers\Av::$branch_id
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(225): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 225, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->video_genres('28', '%E0%B9%81%E0%B8...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-08 09:21:43 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1190): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1648): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(1280): CodeIgniter\Model->__get('live_stream')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(228): App\Models\Av_Model->get_path_livesteram()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->video_genres('28', '%E0%B9%81%E0%B8...')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 09:23:48 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1190): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1648): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(1280): CodeIgniter\Model->__get('live_stream')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(224): App\Models\Av_Model->get_path_livesteram()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->video_genres('28', '%E0%B9%81%E0%B8...')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 09:26:12 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1190): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1648): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(1261): CodeIgniter\Model->__get('live_stream')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(224): App\Models\Av_Model->get_path_livesteram()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->video_genres('6', '%E0%B8%8A%E0%B8...')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 09:26:14 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1190): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Model.php(1648): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Models\Av_Model.php(1261): CodeIgniter\Model->__get('live_stream')
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(224): App\Models\Av_Model->get_path_livesteram()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->video_genres('6', '%E0%B8%8A%E0%B8...')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 09:27:08 --> Undefined variable: listcontent
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->video_genres('6', '%E0%B8%8A%E0%B8...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-08 09:27:25 --> Undefined variable: docavURL
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\av\templates\header.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('av/templates/he...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(248): view('av/templates/he...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->video_genres('6', '%E0%B8%8A%E0%B8...')
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 21:53:15 --> Undefined variable: get_img_og
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\clip\templates\header.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('clip/templates/...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(359): view('clip/templates/...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->clip()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 21:59:13 --> Undefined index: setting_img
+#0 C:\xampp\htdocs\movie\doofreehd4k\app\Views\clip\templates\header.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('clip/templates/...', Array, true)
+#3 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(359): view('clip/templates/...', Array)
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->clip()
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#6 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-08 22:00:40 --> Invalid file: {0}
+#0 C:\xampp\htdocs\movie\doofreehd4k\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clip/templates/...')
+#1 C:\xampp\htdocs\movie\doofreehd4k\system\Common.php(1071): CodeIgniter\View\View->render('clip/templates/...', Array, true)
+#2 C:\xampp\htdocs\movie\doofreehd4k\app\Controllers\Av.php(362): view('clip/templates/...')
+#3 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(910): App\Controllers\Av->clip()
+#4 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Av))
+#5 C:\xampp\htdocs\movie\doofreehd4k\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\movie\doofreehd4k\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

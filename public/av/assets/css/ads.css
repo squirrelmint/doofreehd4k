@@ -1,0 +1,14 @@
+#ads_fix_footer {
+    width: 100%;
+    margin: auto;
+ }
+
+ #ads_fox_bottom {
+    bottom: 0px;
+    display: block;
+    min-height: 40px;
+    position: fixed;
+    text-align: center;
+    z-index: 50000;
+    width: 90%;
+ }

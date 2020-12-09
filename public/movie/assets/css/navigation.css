@@ -1,0 +1,34 @@
+.navigation {
+  display: block;
+  color: #ccc;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #fff;
+  text-decoration: none;
+}
+.navigation li {
+  display: inline;
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  background-color: #303030;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px;
+}
+.navigation li.active a {
+  background-color: #c5ad00;
+  transition: ease-in-out(100ms);
+}
+.navigation li a:hover {
+  background-color: #767272;
+  transform: scale(1.5);
+}

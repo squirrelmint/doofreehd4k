@@ -1,0 +1,46 @@
+.paginate {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+}
+a.paginate {
+border: 1px solid #FFFFFF;
+background-color: #333333;
+padding: 2px 6px 2px 6px;
+text-decoration: none;
+color: #FFFFFF;
+}
+h2 {
+	font-size: 12pt;
+	color: #003366;
+	}
+	
+	h2 {
+	line-height: 1.2em;
+	letter-spacing:-1px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	}
+a.paginate:hover {
+border: 1px solid #f1b00d;
+background-color: #f1b00d;
+color: #000;
+text-decoration: underline;
+}
+a.current {
+border: 1px solid #f1b00d;
+font: bold 14px Arial,Helvetica,sans-serif;
+padding: 2px 6px 2px 6px;
+cursor: default;
+background:#f1b00d;
+color: #000;
+text-decoration: none;
+}
+span.inactive {
+border: 1px solid #999;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+padding: 2px 6px 2px 6px;
+color: #999;
+cursor: default;
+}
